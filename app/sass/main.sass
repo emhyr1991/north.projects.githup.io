@@ -217,6 +217,7 @@ body
 
 .gallery__item
     width: 25%
+    overflow: hidden
 
 .gallery__item img
     transition: 1s
@@ -281,3 +282,138 @@ body
 .nav-block__item a:hover
     color: #00CAC4
     transition: 0.3s
+
+//Slider
+
+/* Слайдер */
+.slick-list
+    overflow: hidden
+/* Лента слайдов */
+.slick-track
+    display: flex
+    align-items: flex-start
+
+
+//Конкретный слайдер
+
+.slider
+    position: relative
+    background: #00CAC4
+    padding: 0 50px
+
+.slider .slick-arrow
+    position: absolute
+    top: 45%
+    z-index: 10
+    font-size: 0
+
+.slider .slick-arrow.slick-prev
+    left: 0
+    background: url("../img/left-arrow.svg") 0 0 / 100% no-repeat
+    width: 30px
+    height: 30px
+    border-style: none
+
+.slider .slick-arrow.slick-next
+    right: 0
+    background: url("../img/next.svg") 0 0 / 100% no-repeat
+    width: 30px
+    height: 30px
+    border-style: none
+
+.slider .slick-dots
+    display: flex
+    justify-content: center
+    align-items: center
+
+.slider .slick-dots li
+    list-style: none
+    margin: 0 5px
+
+
+/* Элемент точки */
+.slider .slick-dots li button
+    font-size: 0
+    width: 10px
+    height: 10px
+    background-color: white
+    border-radius: 50%
+    border-style: none
+    margin-bottom: 20px
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button
+    background-color: transparent
+    border: 1px solid white
+
+.slider__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding-top: 250px
+    font-size: 25px
+    color: white
+    & span
+        width: 37%
+
+.inner
+    height: 500px
+
+//Brand block
+
+.brand
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 200px
+
+//Form block
+
+.form-block
+    background: #F5F5F5
+
+//Form
+
+form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.form-first input
+    width: 320px
+    height: 50px
+
+.form-first__one
+    margin-right: 12px
+
+.form-first__two
+    margin-left: 12px
+
+.form-second input
+    width: 671px
+    height: 50px
+    margin-top: 35px
+
+textarea
+    width: 670px
+    height: 170px
+    margin-top: 35px
+
+.text-box.form-content
+    margin-bottom: 40px
+
+.submit
+    margin-top: 30px
+    margin-bottom: 100px
+    width: 180px
+    border-style: none
+    height: 55px
+    background: rgb(16, 201, 195)
+    color: white
+    font-family: Montserrat-Medium
+    font-size: 15px
+
+
