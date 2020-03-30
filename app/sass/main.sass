@@ -13,7 +13,7 @@ body
 .top
     background: url(../img/banner.jpg) no-repeat
     background-size: cover
-    height: 600px
+    height: 700px
 
 .roof
     display: flex
@@ -37,9 +37,12 @@ body
 .roof-list__item
     list-style: none
 
+.roof-list__item a:hover
+    color: rgb(16, 201, 195)
+
 .roof-list__link
     text-decoration: none
-    font-family: Montserrat-Medium
+    font-family: 'Montserrat', sans-serif
     font-size: 12px
     color: black
     font-weight: bold
@@ -64,13 +67,13 @@ body
     padding-top: 55px
 
 .banner-content h1
-    font-family: Montserrat-Medium
-    font-size: 25px
+    font-family: 'Montserrat', sans-serif
+    font-size: 30px
     padding-bottom: 5px
 
 .banner-content p
-    font-family: NunitoSans-Regular
-    font-size: 16px
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
     padding-bottom: 30px
 
 
@@ -89,8 +92,8 @@ body
     text-decoration: none
     background: rgb(16, 201, 195)
     color: white
-    font-family: Montserrat-Medium
-    font-size: 10px
+    font-family: 'Montserrat', sans-serif
+    font-size: 12px
 
 
 
@@ -111,13 +114,13 @@ body
     margin-bottom: 100px
 
 .text-box h2
-    font-family: Montserrat-Medium
-    font-size: 20px
+    font-family: 'Montserrat', sans-serif
+    font-size: 25px
 
 .text-box p
     text-align: center
-    font-family: NunitoSans-Regular
-    font-size: 14px
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 //skills
 
@@ -141,14 +144,28 @@ body
 
 .skills__title
     width: 100%
-    font-size: 30px
+    font-size: 25px
     font-weight: bold
     margin-bottom: 20px
+    font-family: 'Montserrat', sans-serif
+
 
 .skills__item
     width: 100%
     margin-top: 15px
     margin-bottom: 15px
+
+.skills__text-box
+    display: flex
+    justify-content: flex-start
+
+.skills__text
+    font-family: 'Montserrat', sans-serif
+    font-size: 12px
+    font-weight: bold
+
+.skills__text
+    margin-right: 20px
 
 .skills__container
     width: 90%
@@ -192,15 +209,20 @@ body
 
 .work-experience__item
     display: flex
-    justify-content: space-around
+    justify-content: center
     align-items: center
     width: 20%
     font-size: 15px
     color: white
 
+.work-experience__item img
+    margin-right: 20px
+
 .work-experience__textblock
     display: flex
     flex-direction: column
+    font-family: 'Montserrat', sans-serif
+    font-size: 13px
 
 .work-experience__text1
     margin-bottom: 5px
@@ -238,14 +260,18 @@ body
     height: 100px
     background: #F5F5F5
     text-decoration: none
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
 
 .load-more-works span
     font-weight: bold
     color: #8F8F8F
 
 .video-block
-    margin-top: 50px
     margin-bottom: 50px
+
+.text-box.mg-video
+    margin-bottom: 60px
 
 //Nav block
 
@@ -271,10 +297,14 @@ body
     text-align: center
     margin-top: 20px
     color: #797979
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 13px
 
 
 .nav-block__item a
     margin-top: 20px
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
     font-weight: bold
     text-decoration: none
     color: #232323
@@ -353,10 +383,14 @@ body
     align-items: center
     text-align: center
     padding-top: 250px
+    font-family: 'Montserrat', sans-serif
     font-size: 25px
     color: white
     & span
-        width: 37%
+        width: 46%
+    & p
+        font-size: 15px
+        margin-top: 40px
 
 .inner
     height: 500px
@@ -382,9 +416,18 @@ form
     justify-content: center
     align-items: center
 
+form input
+    border: none
+
+form textarea
+    border: none
+
 .form-first input
-    width: 320px
+    width: 310px
     height: 50px
+    padding-left: 10px
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 .form-first__one
     margin-right: 12px
@@ -393,14 +436,20 @@ form
     margin-left: 12px
 
 .form-second input
-    width: 671px
+    width: 661px
     height: 50px
     margin-top: 35px
+    padding-left: 10px
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 textarea
-    width: 670px
+    width: 660px
     height: 170px
     margin-top: 35px
+    padding-left: 10px
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 .text-box.form-content
     margin-bottom: 40px
@@ -413,8 +462,8 @@ textarea
     height: 55px
     background: rgb(16, 201, 195)
     color: white
-    font-family: Montserrat-Medium
-    font-size: 15px
+    font-family: 'Montserrat', sans-serif
+    font-size: 12px
 
 //Footer
 
@@ -437,6 +486,18 @@ footer
     flex-direction: column
     color: #A7A7A7
 
+.footer-one span
+    font-family: 'Montserrat', sans-serif
+    font-size: 20px
+    color: white
+    padding-bottom: 10px
+
+.footer-one p
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
+    width: 50%
+    line-height: 25px
+
 
 .footer-two
     width: 26%
@@ -445,6 +506,7 @@ footer
     flex-direction: column
     height: 86px
     color: #A7A7A7
+    font-size: 17px
 
 
 .footer-three
@@ -452,6 +514,8 @@ footer
     display: flex
     justify-content: center
     flex-direction: column
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 
 .footer-four
@@ -459,6 +523,8 @@ footer
     display: flex
     justify-content: center
     flex-direction: column
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 
 .footer-five
@@ -466,6 +532,8 @@ footer
     display: flex
     justify-content: center
     flex-direction: column
+    font-family: 'Nunito Sans', sans-serif
+    font-size: 15px
 
 .footer-box a
     text-decoration: none
@@ -476,3 +544,4 @@ footer
     color: white
 
 
+//Media
