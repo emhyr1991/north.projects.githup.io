@@ -1,3 +1,5 @@
+@import "home"
+@import "about"
 
 body
     margin: 0
@@ -18,6 +20,7 @@ body
 .roof
     display: flex
     justify-content: space-between
+    align-items: center
     padding-bottom: 130px
     
 .roof-logo
@@ -32,10 +35,11 @@ body
 
 .roof-list
     display: flex
-    justify-content: space-between
+    justify-content: flex-end
 
 .roof-list__item
     list-style: none
+    margin-left: 20px
 
 .roof-list__item a:hover
     color: rgb(16, 201, 195)
@@ -130,7 +134,7 @@ body
 .skills
     display: flex
     justify-content: space-between
-    height: 575px
+    height: 100%
 
 .skills__left
     width: 50%
@@ -190,10 +194,12 @@ body
 
 .skills__right
     width: 50%
+    display: flex
+    align-items: center
+    background-color: #0E304C
 
 .skills__img
     width: 100%
-    height: 100%
 
 //work experience block
 
@@ -355,6 +361,7 @@ body
     display: flex
     justify-content: center
     align-items: center
+    padding-left: 0
 
 .slider .slick-dots li
     list-style: none
@@ -387,7 +394,7 @@ body
     font-size: 25px
     color: white
     & span
-        width: 46%
+        width: 100%
     & p
         font-size: 15px
         margin-top: 40px
@@ -400,8 +407,13 @@ body
 .brand
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     align-items: center
     height: 200px
+
+.brand__item
+    text-align: center
+    width: 20%
 
 //Form block
 
@@ -543,5 +555,282 @@ footer
 .footer-box a:hover
     color: white
 
+iframe
+    width: 100%
+
+.social-block
+    display: none
+
 
 //Media
+
+@media (max-width: 767px)
+
+    body.lock
+        overflow: hidden
+
+    .top
+        height: 400px
+
+    .banner
+        justify-content: center
+
+    .banner-content h1
+        font-size: 20px
+
+    .button__link
+        width: 150px
+        height: 45px
+
+    .skills
+        height: 250px
+    .skills__title
+        font-size: 20px
+
+    .work-experience
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        height: 300px
+        padding-top: 20px
+        padding-bottom: 20px
+
+    .work-experience__item
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        width: 50%
+        font-size: 15px
+        color: white
+
+    iframe
+        height: 300px
+
+    .nav-block__item
+        width: 50%
+
+    .gallery__item
+        width: 50%
+
+    .slider__item
+        padding-top: 180px
+        font-size: 15px
+
+    .slider__item span
+        width: 100%
+
+    .slick-list
+        height: 360px !important
+
+    .brand
+        height: 350px
+
+    .form-first
+        display: flex
+        text-align: center
+        flex-direction: column
+
+    .form-first__one
+        width: 350px
+        margin: 0 0 20px 0
+
+    .form-first__two
+        width: 350px
+        margin: 0 0 20px 0
+
+    .form-second input
+        width: 350px
+
+    textarea
+        width: 350px
+
+    .brand__item
+        width: 50%
+        text-align: center
+        margin-bottom: 20px
+
+    .roof
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 50
+        padding-bottom: 0
+        height: 50px
+
+    .roof:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: white
+        z-index: 3
+        box-shadow: 0 0 10px
+
+    .roof-logo
+        position: relative
+        left: 15px
+        z-index: 5
+
+    .roof-menu
+        z-index: 2
+
+    .roof__burger
+        display: block
+        position: relative
+        width: 30px
+        height: 20px
+        z-index: 5
+        right: 15px
+
+    .roof__burger:before,
+    .roof__burger:after
+        content: ''
+        background-color: black
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        transition: all 0.3s ease 0s
+
+    .roof__burger:before
+        top: 0
+
+    .roof__burger span
+        background-color: black
+        position: absolute
+        width: 100%
+        height: 2px
+        top: 9px
+        transition: all 0.3s ease 0s
+
+    .roof__burger:after
+        bottom: 0
+
+    .roof-menu
+        position: fixed
+        top: -100%
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #10C9C3
+        padding: 50px 0 0 0
+        transition: all 0.3s ease 0s
+    .roof-menu a
+        font-size: 25px
+    .roof-menu.active
+        top: 0
+
+    .roof-list
+        display: block
+        text-align: start
+
+    .roof-list__item
+        margin: 20px 0 0 0
+
+    .roof__burger.active:before
+        transform: rotate(45deg)
+        top: 9px
+    .roof__burger.active:after
+        transform: rotate(-45deg)
+        bottom: 9px
+    .roof__burger.active span
+        transform: scale(0)
+
+    .roof-list__link.roof-list__link_active
+        color: #0C0C0C
+
+    .footer-three, .footer-four, .footer-five
+        display: none
+
+    footer
+        height: 180px
+
+    .footer-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        height: 180px
+
+    .footer-one
+        width: 40%
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+        color: #A7A7A7
+        height: 80px
+
+    .footer-one span
+        font-size: 20px
+
+    .footer-one p
+        display: none
+
+    .footer-two
+        width: 60%
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+        align-items: flex-end
+        height: 86px
+        color: #A7A7A7
+        font-size: 17px
+
+    .social-block
+        display: flex
+        align-items: center
+        width: 100%
+        justify-content: space-around
+
+    .social-block a
+        font-size: 35px
+
+    .text-box
+        width: 100%
+
+@media (max-width: 480px)
+    .skills
+        height: auto
+        flex-direction: column
+    .skills__title
+        font-size: 15px
+
+    .banner-content
+        width: 60%
+
+    .skills__left
+        width: 97%
+        padding-left: 10px
+        padding-top: 20px
+        padding-bottom: 20px
+        order: 2
+    .skills__right
+        width: 100%
+        order: 1
+
+    .form-first input
+        width: 290px
+
+    .form-first input
+        width: 290px
+
+    .form-second input
+        width: 300px
+
+    textarea
+        width: 300px
+
+    .work-experience__textblock
+        font-size: 12px
+
+    .nav-block__item
+        width: 100%
+
+    .slider__item
+        padding-top: 150px
+    .footer-one
+        font-size: 17px
