@@ -78,6 +78,15 @@ body {
   background: white;
   padding: 0; }
 
+.slider1 .slick-list {
+  height: 625px !important; }
+
+.footer-slider {
+  height: 175px; }
+
+.footer-slider .footer-box {
+  height: 175px; }
+
 .slider1 .slick-arrow {
   position: absolute;
   top: calc(100% - 60px);
@@ -136,7 +145,7 @@ body {
   min-height: 100vh; }
 
 .skills.skills__slider {
-  min-height: 100vh; }
+  min-height: 70vh; }
 
 .skills__left.skills__left-slider {
   align-items: flex-start;
@@ -175,7 +184,9 @@ body {
     width: 100%;
     order: 1; }
   .slider1 .slick-list {
-    height: auto !important; } }
+    height: auto !important; }
+  .skills.skills__slider {
+    min-height: 100vh; } }
 
 @media (max-width: 767px) {
   .top.top__slider {
